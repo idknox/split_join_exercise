@@ -56,7 +56,7 @@ def capitalize_every_third_word(block_string)
   output.each do |word|
       word.downcase!
       if output.index(word) % 3 == 0
-      word[0] = word[0].upcase
+        word.capitalize!
       end
   end
   output.join(" ") + "."

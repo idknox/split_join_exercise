@@ -49,7 +49,6 @@ end
 
 def capitalize_every_third_word(block_string)
   output = []
-  final = []
   new_string = block_string.split(" ")
   new_string.each do |word|
     output.push(word[0...-1])
